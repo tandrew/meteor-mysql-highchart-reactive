@@ -1,10 +1,14 @@
-# MySQL Leaderboard Example
+# MySQL and Highcharts Reactive Leaderboard Example
 
-The familiar Meteor Leaderboard example modified to use a MySQL backend, reactively!
+The familiar Meteor Leaderboard example modified to use a MySQL backend as well as a Highcharts, reactively!
 
-This example uses the following new package for MySQL integration:
+This example uses the following packages 
 
+For MySQL integration: 
 * [numtel:mysql](https://github.com/numtel/meteor-mysql)
+
+For Highcharts integration:
+* [maazalik:highcharts] (https://github.com/MaazAli/Meteor-HighCharts)
 
 ## Quick start
 
@@ -27,3 +31,14 @@ $ ed leaderboard.js
 
 $ meteor
 ```
+
+## Highcharts integration
+
+For this example I have just added a pie chart using Highcharts. For convenience and demonstration I have used the [maazalik:highcharts] (https://github.com/MaazAli/Meteor-HighCharts) package. 
+Of course the same can be achieved without thi package using a little jQuery.
+
+The demo demonstrates nicely how the pie chart reactively changes in line with updates to the MySQL database.   
+
+## License Highcharts
+
+Highcharts is free for personal and non-profit projects. For other purposes click [here](http://shop.highsoft.com/highcharts.html).
