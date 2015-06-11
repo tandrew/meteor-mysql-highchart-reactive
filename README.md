@@ -34,10 +34,10 @@ $ meteor
 
 ## Highcharts integration
 
-For this example I have just added a pie chart using Highcharts. For convenience and demonstration I have used the [maazalik:highcharts] (https://github.com/MaazAli/Meteor-HighCharts) package. 
+For this example I have added a pie chart which reflects the score distribution using Highcharts. For convenience and demonstration I have used the [maazalik:highcharts] (https://github.com/MaazAli/Meteor-HighCharts) package. 
 Of course the same can be achieved without thi package using a little jQuery.
 
-The demo demonstrates nicely how the pie chart reactively changes in line with updates to the MySQL database.   
+The demo shows nicely how the pie chart changes reactively in line with updates to the MySQL database. Thanks to Highcharts the transition effect is very smooth as long as not a new player is added in the DB (in which case the chart is completely redrawn).
 
 ## License Highcharts
 
