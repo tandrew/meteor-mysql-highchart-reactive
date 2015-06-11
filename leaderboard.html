@@ -10,6 +10,13 @@
     <h1 class="title">Leaderboard</h1>
     <div class="subtitle">Select a scientist to give them points</div>
     {{> leaderboard}}
+
+      &nbsp;
+      <hr>
+      &nbsp;
+
+      {{> highchart }}
+
   </div>
 </body>
 
@@ -32,6 +39,7 @@
   {{else}}
     <div class="message">Click a player to select</div>
   {{/if}}
+
 </template>
 
 <template name="player">
@@ -39,5 +47,10 @@
     <span class="name">{{name}}</span>
     <span class="score">{{score}}</span>
   </li>
+</template>
+
+
+<template name="highchart">
+    {{> highchartsHelper chartId="playersChart" chartWidth="100%" charHeight="100%" chartObject=pieChart}}
 </template>
 
