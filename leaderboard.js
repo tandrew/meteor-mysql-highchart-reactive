@@ -103,10 +103,10 @@ if (Meteor.isClient) {
     )
     ;
 
-    Template.highchart.onRendered(function () {
 
+    Template.highchart.onRendered(function () {
             Tracker.autorun(function () {
-                players.reactive();
+                players.depend();
                 chart = $("#playersChart").highcharts();
                 var arr = $.map(players, function (value, index) {
                     return [[value.name, value.score]];
